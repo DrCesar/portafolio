@@ -10,36 +10,58 @@ class Carousel extends Component {
     this.state = {
       slides: [
         {
-          imageSrc: 'https://www.tesla.com/sites/default/files/images/homepage/20180710/ms/homepage-models.jpg?20181117',
-          cls: 'active',
+          imageSrc: 'http://s1.1zoom.me/big0/927/405408-blackangel.jpg',
+          cls: '',
         },
         {
-          imageSrc: 'https://www.tesla.com/sites/default/files/images/homepage/20180710/ms/homepage-models.jpg?20181117',
+          imageSrc: 'https://cdn.hipwallpaper.com/i/14/52/VHcLiN.jpg',
+          cls: '',
+        },
+        {
+          imageSrc: 'http://assets2.ignimgs.com/2014/10/17/mariojpeg-9a7106_1280w.jpg',
+          cls: '',
+        },
+        {
+          imageSrc: 'http://i.imgur.com/vZvH4Qx.jpg',
           cls: '',
         },
       ],
+      active: 1,
     };
   }
 
   next = () => {
-    console.log('next');
+    const { slides, active } = this.state;
+    this.setState({ active: (active + 1) % slides.length });
   };
 
   prev = () => {
-    console.log('prev');
+    const { slides } = this.state;
+    let { active } = this.state;
+    if (active === 0) {
+      active = slides.length;
+    }
+    this.setState({ active: (active - 1) % slides.length });
   }
 
   render() {
     const compSlides = [];
-    const { slides } = this.state;
+    const { slides, active } = this.state;
     for (let i = 0; i < slides.length; i += 1) {
-      compSlides.push(<Slide imageSrc={slides[i].imageSrc} cls={slides[i].cls} />);
+      let { cls } = slides[i].cls;
+      if (active === i) {
+        cls += ' active';
+      }
+      compSlides.push(<Slide imageSrc={slides[i].imageSrc} cls={cls} />);
     }
     return (
       <div className="carousel-container">
-        {compSlides}
-        <button type="button" className="prev" onClick={this.prev}>&#10094;</button>
-        <button type="button" className="next" onClick={this.next}>&#10095;</button>
+        <h1 className="title">Favorite Games</h1>
+        <div className="slide-container">
+          {compSlides}
+          <button type="button" className="prev" onClick={this.prev}>&#10094;</button>
+          <button type="button" className="next" onClick={this.next}>&#10095;</button>
+        </div>
       </div>
     );
   }

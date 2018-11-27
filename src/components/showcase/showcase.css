@@ -8,9 +8,11 @@
 }
 
 .carousel-showcase {
-  height: 60%;
+  height: 80%;
 }
 
 .carousel-showcase .container {
   height: 100%;
+  /*width: 70%;*/
+overflow: auto;
 }

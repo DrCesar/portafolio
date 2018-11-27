@@ -25,12 +25,6 @@ const FormControl = () => (
         </div>
         <div className="row">
           <div className="input-field col s12">
-            <input placeholder="juanlopez@gane_el_curso.com" id="email_input" type="email" className="validate" />
-            <label htmlFor="email_input">Email</label>
-          </div>
-        </div>
-        <div className="row">
-          <div className="input-field col s12">
             <input placeholder="Password" id="pass_input" type="password" className="validate" />
             <label htmlFor="pass_input">Password</label>
           </div>
