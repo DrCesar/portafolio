@@ -4,6 +4,7 @@ import Showcase from './components/showcase/showcase';
 import Header from './components/header/header';
 import About from './components/about/about';
 import FormControl from './components/form-control/form-control';
+import Carousel from './components/carousel/carousel';
 
 const App = () => (
   <div className="body">
@@ -14,7 +15,7 @@ const App = () => (
       <About />
     </Showcase>
     <Showcase cls="carousel-showcase green accent-4">
-      <FormControl />
+      <Carousel />
     </Showcase>
     <Showcase cls="form-control-showcase white">
       <FormControl />

@@ -10,3 +10,7 @@
 .carousel-showcase {
   height: 60%;
 }
+
+.carousel-showcase .container {
+  height: 100%;
+}

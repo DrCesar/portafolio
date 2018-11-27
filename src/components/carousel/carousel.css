@@ -1,7 +1,8 @@
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+.carousel-container {
+  height: 100%;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -12,6 +13,9 @@
   display: none;
 }
 
+.slide.active {
+  display: block;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;

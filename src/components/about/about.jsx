@@ -7,10 +7,10 @@ const About = () => (
   <div className="about-container">
     <h1 className="name-title">Josue Jacobs</h1>
     <div className="row">
-      <div className="col s9 left-sec">
+      <div className="col s6 left-sec">
         <img alt="" src={perfil} />
       </div>
-      <div className="col s3 right-sec">
+      <div className="col s6 right-sec">
         <p className="description ">
           Humano residente del planeta Tierra.
           <br />
