@@ -32,7 +32,6 @@ const FormControl = () => (
         <div className="row">
           <div className="col s12">
             <button className="btn waves-effect waves-light" type="button" name="action">
-              Submit
               <i className="material-icons right">send</i>
             </button>
           </div>

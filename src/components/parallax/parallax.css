@@ -1,0 +1,45 @@
+
+.parallax {
+  height: 100%;
+}
+
+.parallax-sec {
+  height: 800px;
+  position: relative;
+  opacity: 0.5;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1 {
+  background-image: url('http://s1.picswalls.com/wallpapers/2014/08/08/iceland-desktop-background_020509293_163.jpg');
+}
+.sec2 {
+  background-image: url('https://stmed.net/sites/default/files/iceland-wallpapers-27904-9737193.jpg');
+}
+.sec3 {
+  background-image: url('http://travelhdwallpapers.com/wp-content/uploads/2017/03/Iceland-Wallpaper-8.jpg');
+}
+
+.sec-small {
+  height: 400px;
+}
+.sec-fill {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-sec h1 {
+  text-align: center;
+}
+
+.parallax-sec p {
+
+}
