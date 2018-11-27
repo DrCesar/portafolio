@@ -1,0 +1,12 @@
+.about-showcase {
+  height: 75%;
+}
+
+.about-showcase .container {
+  height: 100%;
+  overflow: auto;
+}
+
+.carousel-showcase {
+  height: 60%;
+}

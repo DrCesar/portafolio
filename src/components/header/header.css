@@ -1,0 +1,10 @@
+.header-container {
+  text-align: center;
+  border: 3px solid #FFFFFF;
+}
+
+.header {
+  font-size: 5em;
+  font-family: 'Black Han Sans', sans-serif; 
+  color: #FFFFFF;
+}

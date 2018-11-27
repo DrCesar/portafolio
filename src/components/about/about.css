@@ -1,0 +1,44 @@
+img {
+  max-width: 100%;
+}
+
+.about-container {
+  height: 100%;
+  overflow: auto;
+}
+
+.row {
+  height: 70%;
+}
+.name-title {
+  font-size: 3em;
+  font-family: 'Chakra Petch', sans-serif; 
+  font-weight: bold;
+}
+.right-sec, .left-sec {
+  padding: 0em 2em !important;
+}
+.right-sec {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.description {
+/*  position: absolute;
+  top: 150px; */
+  margin
+  padding: 10px;
+  font-family: 'Roboto Mono', sans-serif; 
+  font-size: 1.5em;
+}
+
+.right-sec::after {
+  content: '';
+  position: absolute;
+  height: 70%;
+  left: 0px;
+  top: 15%;
+  border: 3px solid #000000;
+}
